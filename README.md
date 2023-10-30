@@ -9,63 +9,11 @@ Este é um bot do Discord que ajuda a gerenciar atividades em um servidor. Ele p
 - **Limpar atividades**: Os usuários podem limpar todas as atividades do banco de dados.
 - **Gerenciamento de tickets**: Os usuários podem criar um novo ticket para atendimento. Eles também podem fechar um ticket existente.
 
-## Dependências
+## Documentação Adicional
 
-Este projeto depende das seguintes bibliotecas Python:
+Para informações mais detalhadas sobre como configurar e usar este bot, consulte as seguintes páginas da Wiki:
 
-- `sqlite3`
-- `python-dotenv`
-- `discord.py`
-
-Você pode instalar todas essas dependências de uma vez com o comando `pip install -r requirements.txt`.
-
-## Configuração
-
-Para configurar o bot, você precisa definir as seguintes variáveis de ambiente:
-
-- `DB_NAME`: O nome do banco de dados SQLite que o bot usará para armazenar as atividades. Se essa variável não estiver definida, o bot usará `'default.db'` como o nome do banco de dados.
-- `DISCORD_BOT_SECRET`: O token do seu bot do Discord. Este é um segredo que o Discord usa para autenticar o seu bot. Você pode obter esse token no Portal de Desenvolvedores do Discord.
-- `ROLE_ID`: O ID do cargo que tem permissão para fechar tickets no Discord.
-
-Você pode definir essas variáveis de ambiente no seu sistema operacional ou no seu ambiente de desenvolvimento. Alternativamente, você pode criar um arquivo `.env` no diretório raiz do projeto e definir as variáveis lá, como neste exemplo:
-
-## Hospedagem na DisCloud
-
-A DisCloud é uma plataforma de hospedagem gratuita para bots do Discord. Aqui estão as etapas para hospedar seu bot na DisCloud:
-
-1. Vá para o site da DisCloud.
-2. Clique em "Login" e faça login com sua conta do Discord.
-3. Clique em "Enviar um bot" no menu à esquerda.
-4. Selecione o bot que você deseja hospedar.
-5. Carregue os arquivos do seu bot. Certifique-se de incluir o arquivo `discloud.config`.
-6. Clique em "Enviar".
-
-Seu bot agora deve estar ativo na DisCloud!
-
-## Arquivo discloud.config
-
-O arquivo `discloud.config` é usado para configurar seu bot na DisCloud. Aqui está um exemplo de como este arquivo pode ser configurado para este projeto:
-
-```plaintext
-NAME=SeuNomeDoBot
-AVATAR=SeuURLDoAvatar
-TYPE=bot
-MAIN=SeuArquivoPrincipal.py
-RAM=100
-AUTORESTART=true
-VERSION=latest
-APT=python3-pip
-```
-
-## Como Adicionar o Bot a um Servidor
-
-Para adicionar este bot a um servidor do Discord, siga estas etapas:
-
-1. Vá para o Portal do Desenvolvedor do Discord.
-2. Clique no bot que você deseja compartilhar.
-3. No painel lateral, clique em "OAuth2".
-4. Na seção "Scopes", selecione "bot" e "applications.commands".
-5. Na seção "Bot Permissions", selecione as permissões necessárias para o seu bot. Para este bot de atividades, você precisará das permissões "Ver Canais", "Enviar Mensagens", "Gerenciar Mensagens", "Ler Histórico de Mensagens", "Mencionar Todos" e "Adicionar Reações".
-6. Copie o link gerado na parte inferior da seção "Scopes". Este é o link de convite do seu bot.
-
-Você pode compartilhar este link com qualquer pessoa que queira adicionar o bot ao servidor do Discord. Lembre-se de que apenas administradores de servidores podem adicionar bots.
+- [Dependências](https://github.com/pauloguilherme0/TaskerBot/wiki/Depend%C3%AAncias)
+- [Variáveis de Ambiente](https://github.com/pauloguilherme0/TaskerBot/wiki/Vari%C3%A1veis-de-Ambiente)
+- [Hospedagem na DisCloud](https://github.com/pauloguilherme0/TaskerBot/wiki/Hospedagem-na-DisCloud)
+- [Como Adicionar o Bot a um Servidor](https://github.com/pauloguilherme0/TaskerBot/wiki/Como-Adicionar-o-Bot-a-um-Servidor)

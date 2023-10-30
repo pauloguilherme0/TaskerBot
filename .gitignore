@@ -126,4 +126,7 @@ dmypy.json
 .pyre/
 
 # DisCloud config file 
-discloud.config 
+discloud.config
+
+# Requirement config file
+requirements.txt

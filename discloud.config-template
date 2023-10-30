@@ -1,8 +1,0 @@
-NAME=your_bot_name
-AVATAR=your_avatar_url
-TYPE=bot
-MAIN=your_main_file.py
-RAM=your_ram_amount
-AUTORESTART=true_or_false
-VERSION=latest_or_specific_version
-APT=python3-pip_or_other_dependencies
