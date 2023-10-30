@@ -29,6 +29,34 @@ Para configurar o bot, você precisa definir as seguintes variáveis de ambiente
 
 Você pode definir essas variáveis de ambiente no seu sistema operacional ou no seu ambiente de desenvolvimento. Alternativamente, você pode criar um arquivo `.env` no diretório raiz do projeto e definir as variáveis lá, como neste exemplo:
 
+## Hospedagem na DisCloud
+
+A DisCloud é uma plataforma de hospedagem gratuita para bots do Discord. Aqui estão as etapas para hospedar seu bot na DisCloud:
+
+1. Vá para o site da DisCloud.
+2. Clique em "Login" e faça login com sua conta do Discord.
+3. Clique em "Enviar um bot" no menu à esquerda.
+4. Selecione o bot que você deseja hospedar.
+5. Carregue os arquivos do seu bot. Certifique-se de incluir o arquivo `discloud.config`.
+6. Clique em "Enviar".
+
+Seu bot agora deve estar ativo na DisCloud!
+
+## Arquivo discloud.config
+
+O arquivo `discloud.config` é usado para configurar seu bot na DisCloud. Aqui está um exemplo de como este arquivo pode ser configurado para este projeto:
+
+```plaintext
+NAME=SeuNomeDoBot
+AVATAR=SeuURLDoAvatar
+TYPE=bot
+MAIN=SeuArquivoPrincipal.py
+RAM=100
+AUTORESTART=true
+VERSION=latest
+APT=python3-pip
+```
+
 ## Como Adicionar o Bot a um Servidor
 
 Para adicionar este bot a um servidor do Discord, siga estas etapas:
