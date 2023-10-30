@@ -1,0 +1,6 @@
+# .env files
+.env
+
+# SQLite database
+*.db
+*.sqlite3
